@@ -1,0 +1,29 @@
+// Colors
+$default-color: #495057;
+$default-shade: #343a40;
+$default-tint: #adb5bd;
+$grey-1: #868e96;
+$grey-2: #f1f3f5;
+$grey-3: #f8f9fa;
+$white: #fff;
+$blue: #4c6ef5;
+$shadow-color: rgba(0, 0, 0, .2);
+$code-color: #fa5252;
+
+// Fonts
+$serif-primary: 'APPLE SD Gothic Neo', 'Noto Sans KR', 'Libre Baskerville', 'Times New Roman', Times, serif;
+$serif-secondary: 'APPLE SD Gothic Neo', 'Noto Sans KR', 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+$sans-serif: 'APPLE SD Gothic Neo', 'Noto Sans KR', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+$monospaced: Menlo, Monaco, monospace;
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+          transition: $args;
+}

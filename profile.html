@@ -1,0 +1,232 @@
+---
+layout: default
+title: Profile
+---
+
+<style>
+
+  div.resume-info {
+    position: relative
+  }
+
+  .resume .workplace {
+    width: 100%;
+    padding: 30px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    list-style: none;
+  }
+
+  .resume .workplace .workplace-name {
+    font-family: "Source Sans Pro", "APPLE SD Gothic Neo", HelveticaNeue, Helvetica, "NanumGothic", "맑은 고딕", "Malgun Gothic", arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 42%;
+    float: left
+  }
+
+  @media (max-width: 670px) {
+    .resume .workplace .workplace-name {
+      float: none;
+      width: 100%
+    }
+  }
+
+  .resume .workplace .work-info {
+    display: inline-block
+  }
+
+  .resume .workplace .work-info p.work-sub-info {
+    color: #8898aa;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400
+  }
+
+  .resume .workplace svg {
+    width: 24px;
+    float: right
+  }
+
+
+  .resume .work-team {
+    font-weight: bold; 
+    color: #4263eb;
+  }
+
+  .resume .work-class {
+    color: #343a40;
+  }
+
+  .resume a .view-all-projects {
+    display: inline-block;
+    color: #8898aa;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    margin: 20px 0
+  }
+
+  .resume a .view-all-projects svg {
+    width: 20px;
+    fill: #8898aa;
+    vertical-align: middle;
+    margin-left: 6px
+  }
+
+  section.skill {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    padding-bottom: 72px
+  }
+
+  section.skill svg {
+    width: 24px;
+    fill: #8565fc;
+    position: absolute
+  }
+
+  section.skill li.skill_name {
+    display: inline-block;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 4px 14px;
+    border-radius: 100px;
+    border: solid 1px #D8E0E7;
+    font-size: 16px;
+    margin: 0 8px 14px 0
+  }
+</style>
+
+<div class="catalogue" style="min-height: 100vh;">
+  <div style="width: 300px; text-align: center; margin: 36px auto;">
+    <h1>변준석</h1>
+    <p style="color: #adb5bd; margin-bottom: 2px;">byun@hbsmith.io</p>
+    <div class="catalogue-line" style="margin: 10px auto;"></div>
+  </div>
+
+      <section class="resume" style="margin-top: 60px;">
+        <ul style="padding: 0;">
+            <li class="workplace transition">
+              <p class="workplace-name">
+                  HBSmith
+              </p>
+              <div class="work-info">
+                    <p class="work-team" >
+                      개발팀&nbsp;
+                      <span class="work-class">
+                        Software Development Engineer (2020.6~)
+                      </span>
+                  </p>
+                  <p class="work-sub-info">
+                    python django API 서버 개발
+                  </p>
+                  <p class="work-sub-info">
+                    Infrastructure as Code (aws)
+                  </p>
+                  <p class="work-sub-info">
+                    <a href="https://go.hbsmith.io/main" target="_blank">
+                      hbsmith.io
+                    </a>
+                  </p>
+              </div>
+              <ul style="padding: 0;">
+                  <li class="workplace transition">
+                    <p class="workplace-name">
+                        (주)디제이코리아 / (주)디제이코리아레코즈
+                    </p>
+                    <div class="work-info">
+                        <p class="work-team" >
+                          Business Development 셀&nbsp;
+                          <span class="work-class">
+                            Developer / DJ 
+                          </span>
+                        </p>
+                        <p class="work-sub-info">
+                          Python, django, DRF 등을 이용한 워크플랫폼 개발
+                        </p>
+                        <p class="work-sub-info">
+                          Python, aws Lambda 를 통한 서버리스 고객서비스 페이지 개발
+                        </p>
+                        <p class="work-sub-info">
+                          데이터 분석을 통한 발주 포캐스트 최적화
+                        </p>
+                        <p class="work-sub-info">
+                          Pro Audio Technology Supervisor
+                        </p>
+                        <p class="work-sub-info">
+                          <a href="https://www.djkorea.co.kr" target="_blank">
+                            www.djkorea.co.kr
+                          </a>
+                        </p>
+                    </div>
+      
+            </li>
+            <li class="workplace transition">
+              <p class="workplace-name">
+                  서울 홍익대학교
+              </p>
+              <div class="work-info">
+                  <p class="work-team" >
+                    공과대학 컴퓨터공학과 학부생&nbsp;
+                    <span class="work-class">
+                      Research Assistant / Student
+                    </span>
+                  </p>
+                  <p class="work-sub-info">
+                      2016 - 2021 졸업 예정
+                  </p>
+                  <p class="work-sub-info">
+                    Python / Tensorflow / Pytorch
+                  </p>
+                  <p class="work-sub-info">
+                    PEM Laboratory Research Assistant
+                  </p>
+                  <p class="work-sub-info">
+                    추천 시스템 / NLP / EDM 장르 Classifier /
+                  </p>
+              </div>
+      
+            </li> 
+      
+          </ul>
+          
+      </section>
+      
+      
+      <section class="skill">
+          <ul style="padding: 0;">
+            <li class="skill_name">
+                aws Solutions Architect Associate
+            </li>
+              <li class="skill_name">
+                  Python
+              </li>
+              <li class="skill_name">
+                  C++
+              </li>
+              <li class="skill_name">
+                  django & DRF
+              </li>
+              <li class="skill_name">
+                  pytorch
+              </li>
+              <li class="skill_name">
+                  go
+              </li>
+              <li class="skill_name">
+                  GraphQL (Graphene)
+              </li>
+              <li class="skill_name">
+                  cython / pypy
+              </li>
+              <li class="skill_name">
+                  vue
+              </li>
+              <li class="skill_name">
+                  linux
+              </li>
+              <li class="skill_name">
+                  vagrant
+              </li>
+          </ul>
+      </section>
+      </div>
+</div>

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="catalogue" style="margin-top: 60px; min-height: 80vh;">
+  {% for item in site.algorithm reversed %}
+  <div style="margin-bottom: 10px;">
+    <h4 style="display: inline; margin: 2px 0;"><a href="{{ item.url }}.html">{{ item.title }}</a></h4>
+    <small style="display: inline; margin: 0 0 10px 4px; color: #adb5bd; font-style: italic;">{{ item.date | date: "%Y년 %m월 %d일" }}</small>
+  </div>
+  {% endfor %}
+</div>

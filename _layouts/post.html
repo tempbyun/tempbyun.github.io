@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="post">
+  <span style="color: #12b886; font-weight: bold;">
+    {% for category in page.categories %}
+      {{ category }}
+    {% endfor %}
+    </span>
+  <h1 class="post-title" style="text-align: left; margin: 2px 0 50px 0;">{{ page.title }}</h1>
+
+  <div class="post-info" style="text-align: left;">
+      {% if page.date %}
+        <span datetime="{{ page.date }}">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
+      {% endif %}
+    </div>  
+
+  <div class="post-line" style="width: 100%; border-top: 1px solid#e9ecef"></div>
+
+  {{ content }}
+</div>
+
+{% if page.comments %}
+  {% include disqus_comments.html %}
+{% endif %}
+
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top">Top</a>
+</div>
